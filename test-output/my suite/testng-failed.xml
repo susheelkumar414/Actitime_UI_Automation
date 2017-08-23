@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [my suite]" parallel="classes">
+  <test name="my test(failed)" parallel="classes">
+    <classes>
+      <class name="com.actitime.tests.CreateNewTask">
+        <methods>
+          <include name="createTaskTest"/>
+        </methods>
+      </class> <!-- com.actitime.tests.CreateNewTask -->
+      <class name="com.actitime.tests.SigninTest">
+        <methods>
+          <include name="SignInTest"/>
+        </methods>
+      </class> <!-- com.actitime.tests.SigninTest -->
+    </classes>
+  </test> <!-- my test(failed) -->
+</suite> <!-- Failed suite [my suite] -->

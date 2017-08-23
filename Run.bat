@@ -1,0 +1,1 @@
+java -cp jars/*;bin com.actitime.tests.CreateNewTask testng.xml
