@@ -26,23 +26,13 @@ public class CreateNewTask extends BaseClass {
 		//else{
 		/*System.setProperty("webdriver.gecko.driver","C:\\selenium drivers\\geckodriver.exe");
 		WebDriver driver=new FirefoxDriver();	*/
-		if(browserType.equalsIgnoreCase("Chrome") && (os.equalsIgnoreCase("mac")))
-		{
-		System.setProperty("webdriver.chrome.driver","/Users/swadageri/Actitime_UI_Automation/src/test/resources/chromedriver");
-		WebDriver driver=new ChromeDriver();
-		driver.get("https://online.actitime.com/some/login.do");
-	
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		LoginPage lp=new LoginPage(driver);
-		lp.signin("susheelkumar414","QUbaguDu");
-		
-		TasksPage tp=new TasksPage(driver);
+		/*		TasksPage tp=new TasksPage(driver);
 		tp.taskButton();
 		
 		custName=randomName();
 		tp.createNewTask("c" + custName, "obill");
 		
-		}
+		}*/
 	}
 		  
 		  public String randomName(){

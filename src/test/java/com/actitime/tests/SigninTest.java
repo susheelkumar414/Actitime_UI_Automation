@@ -24,6 +24,7 @@ public class SigninTest extends BaseClass {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		LoginPage lp=new LoginPage(driver);
 		lp.signin("susheelkumar414","QUbaguDu");
+		System.out.println("signin has been done successfully");
 		
 
 	}
