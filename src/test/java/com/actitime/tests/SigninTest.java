@@ -11,7 +11,7 @@ import com.actitime.page.LoginPage;
 public class SigninTest extends BaseClass {
 	
 	@Test
-	public void SignInTest(){
+	public void signInTest(){
 		String browserType="chrome";
 		String os="mac";
 		

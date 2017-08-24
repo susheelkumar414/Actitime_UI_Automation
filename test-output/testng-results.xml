@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5869" started-at="2017-08-24T05:11:58Z" finished-at="2017-08-24T05:12:04Z">
+  <suite name="my suite" duration-ms="6387" started-at="2017-08-24T08:57:00Z" finished-at="2017-08-24T08:57:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5869" started-at="2017-08-24T05:11:58Z" finished-at="2017-08-24T05:12:04Z">
-      <class name="com.actitime.tests.SigninTest">
-        <test-method status="PASS" signature="SignInTest()[pri:0, instance:com.actitime.tests.SigninTest@215be6bb]" name="SignInTest" duration-ms="5855" started-at="2017-08-24T10:41:58Z" finished-at="2017-08-24T10:42:04Z">
+    <test name="my test" duration-ms="6387" started-at="2017-08-24T08:57:00Z" finished-at="2017-08-24T08:57:06Z">
+      <class name="com.actitime.tests.CreateNewTask">
+        <test-method status="PASS" signature="createTaskTest()[pri:0, instance:com.actitime.tests.CreateNewTask@4439f31e]" name="createTaskTest" duration-ms="10" started-at="2017-08-24T14:27:00Z" finished-at="2017-08-24T14:27:00Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SignInTest -->
+        </test-method> <!-- createTaskTest -->
+      </class> <!-- com.actitime.tests.CreateNewTask -->
+      <class name="com.actitime.tests.SigninTest">
+        <test-method status="PASS" signature="signInTest()[pri:0, instance:com.actitime.tests.SigninTest@5d5eef3d]" name="signInTest" duration-ms="6368" started-at="2017-08-24T14:27:00Z" finished-at="2017-08-24T14:27:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signInTest -->
       </class> <!-- com.actitime.tests.SigninTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- my test -->
+  </suite> <!-- my suite -->
 </testng-results>

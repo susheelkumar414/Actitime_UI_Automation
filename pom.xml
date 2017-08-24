@@ -3,4 +3,10 @@
   <groupId>com.actitime.automation</groupId>
   <artifactId>ui-automation-actitime</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+
+<properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+</properties>
+
+
 </project>
