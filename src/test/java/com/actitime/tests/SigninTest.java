@@ -12,15 +12,20 @@ public class SigninTest extends BaseClass {
 	
 	@Test
 	public void SignInTest(){
+		String browserType="chrome";
+		String os="mac";
 		
-		System.setProperty("webdriver.chrome.driver","C:\\selenium drivers\\chromedriver.exe");
+		if(browserType.equalsIgnoreCase("Chrome") && (os.equalsIgnoreCase("mac")))
+		{
+		System.setProperty("webdriver.chrome.driver","/Users/swadageri/Actitime_UI_Automation/src/test/resources/chromedriver");
 		WebDriver driver=new ChromeDriver();
-		driver.get("http://127.0.0.1/login.do;jsessionid=6r8m2oa9c5t8k");
+		driver.get("https://online.actitime.com/some/login.do");
 	
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		LoginPage lp=new LoginPage(driver);
-		lp.signin("admin","manager");
+		lp.signin("susheelkumar414","QUbaguDu");
 		
+
 	}
 
-}
+	}}
