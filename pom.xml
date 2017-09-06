@@ -11,23 +11,29 @@
 	<dependency>
 		<groupId>org.seleniumhq.selenium</groupId>
 		<artifactId>selenium-java</artifactId>
-		<version>2.53.1</version>
+		<version>3.5.3</version>
 	</dependency>
 
 
-        <dependency>
-  <groupId>org.testng</groupId>
-  <artifactId>testng</artifactId>
-  <version>6.10</version>
-  <scope>test</scope>
-</dependency>
+    <dependency>
+    	<groupId>org.testng</groupId>
+    	<artifactId>testng</artifactId>
+    	<version>6.10</version>
+    	<scope>test</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/log4j/log4j -->
+	<dependency>
+    	<groupId>log4j</groupId>
+    	<artifactId>log4j</artifactId>
+    	<version>1.2.17</version>
+	</dependency>
+    
 
 </dependencies>
 
+<build>
 
-    <build>
-
-        <sourceDirectory>src.test.java</sourceDirectory>
+   <sourceDirectory>src.test.java</sourceDirectory>
 
         <plugins>
             <plugin>
@@ -48,7 +54,40 @@
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
-        </plugins>
+            
+            <plugin>
+   				 	<groupId>com.github.webdriverextensions</groupId>
+    				<artifactId>webdriverextensions-maven-plugin</artifactId>
+    				<version>3.1.1</version>
+ 
+    			<configuration>
+    				<installationDirectory>src.test.resources</installationDirectory>
+    				
+        		<drivers>
+            		<driver>
+                	<name>edgedriver</name>
+                	<version>4.15063</version>
+            	</driver>
+            	<driver>
+                	<name>internetexplorerdriver</name>
+                	<version>3.4.0</version>
+            	</driver>
+            	<driver>
+                	<name>chromedriver</name>
+                	<version>2.29</version>
+            	</driver>
+            	<driver>
+                	<name>geckodriver</name>
+                	<version>0.17.0</version>
+            	</driver>
+            	<driver>
+                	<name>phantomjs</name>
+                	<version>2.1.1</version>
+            	</driver>
+        		</drivers>
+   		 		</configuration>
+			</plugin>
+       </plugins>
     </build>
 </project>
 

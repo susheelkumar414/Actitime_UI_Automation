@@ -2,6 +2,7 @@ package com.actitime.tests;
 
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -18,6 +19,8 @@ public class SigninTest extends BaseClass {
 	public void signInTest(String sBrowserType){
 		String browserType= sBrowserType;
 		String os="mac";
+		Logger logger=Logger.getLogger(SigninTest.class);
+
 		if(browserType.equalsIgnoreCase("firefox") && (os.equalsIgnoreCase("mac")))
 		{
 			System.setProperty("webdriver.gecko.driver","/Users/swadageri/Actitime_UI_Automation/src/test/resources/geckodriver");
@@ -39,7 +42,7 @@ public class SigninTest extends BaseClass {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		LoginPage lp=new LoginPage(driver);
 		lp.signin("susheelkumar414","QUbaguDu");
-		System.out.println("signin has been done successfully");
+		logger.info("signin has been done successfully");
 		
 
 	}
