@@ -59,11 +59,11 @@ WebDriver driver;
 
 	public void taskButton() throws InterruptedException{
 		tasksButton.click();
-		Thread.sleep(10000);
-		addNewtasksButto.click();
+		Thread.sleep(20000);
+		//addNewtasksButto.click();
 		Thread.sleep(5000);
 
-		createNewtasksButto.click();
+		//createNewtasksButto.click();
 		
 		
 	}
