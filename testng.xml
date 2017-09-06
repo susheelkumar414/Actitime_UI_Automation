@@ -2,6 +2,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="my suite" parallel="classes" thread-count="5">
   <test name="my test">
+    <parameter name="browserType" value="chrome"></parameter>
+    <classes>
+      <class name="com.actitime.tests.CreateNewTask"/>	
+      <class name="com.actitime.tests.SigninTest"/>
+    </classes>
+  </test>
+  <test name="my test1">
+    <parameter name="browserType" value="firefox"></parameter>
     <classes>
       <class name="com.actitime.tests.CreateNewTask"/>	
       <class name="com.actitime.tests.SigninTest"/>
